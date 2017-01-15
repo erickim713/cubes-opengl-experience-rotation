@@ -1,0 +1,199 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGUID>{BE0AC08B-93E2-300F-964A-C8747F6F8626}</ProjectGUID>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>ALL_BUILD</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+    <PropertyGroup>
+      <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\graphics\CS380-master\ExternalProjects\glfw-3.0.3\include\GLFW;C:\graphics\CS380-master\ExternalProjects\glm-0.9.4.0;C:\graphics\CS380-master\ExternalProjects\glew-1.9.0\include;C:\graphics\CS380-master\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\graphics\CS380-master\ExternalProjects\glfw-3.0.3\include\GLFW;C:\graphics\CS380-master\ExternalProjects\glm-0.9.4.0;C:\graphics\CS380-master\ExternalProjects\glew-1.9.0\include;C:\graphics\CS380-master\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\graphics\CS380-master\ExternalProjects\glfw-3.0.3\include\GLFW;C:\graphics\CS380-master\ExternalProjects\glm-0.9.4.0;C:\graphics\CS380-master\ExternalProjects\glew-1.9.0\include;C:\graphics\CS380-master\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\graphics\CS380-master\ExternalProjects\glfw-3.0.3\include\GLFW;C:\graphics\CS380-master\ExternalProjects\glm-0.9.4.0;C:\graphics\CS380-master\ExternalProjects\glew-1.9.0\include;C:\graphics\CS380-master\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\graphics\CS380-master\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/graphics/CS380-master/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -HC:/graphics/CS380-master -BC:/graphics/total --check-stamp-file C:\graphics\total\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/graphics/CS380-master/CMakeLists.txt;C:\graphics\CS380-master\CMakeLists.txt;C:\graphics\total\CMakeFiles\3.5.1\CMakeSystem.cmake;C:\Program Files (x86)\CMake\share\cmake-3.5\Modules\CMakeSystemSpecificInitialize.cmake;C:\graphics\total\CMakeFiles\3.5.1\CMakeCCompiler.cmake;C:\graphics\total\CMakeFiles\3.5.1\CMakeCXXCompiler.cmake;C:\Program Files (x86)\CMake\share\cmake-3.5\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files (x86)\CMake\share\cmake-3.5\Modules\CMakeGenericSystem.cmake;C:\Program Files (x86)\CMake\share\cmake-3.5\Modules\Platform\Windows.cmake;C:\Program Files (x86)\CMake\share\cmake-3.5\Modules\Platform\WindowsPaths.cmake;C:\Program Files (x86)\CMake\share\cmake-3.5\Modules\CMakeCInformation.cmake;C:\Program Files (x86)\CMake\share\cmake-3.5\Modules\CMakeLanguageInformation.cmake;C:\Program Files (x86)\CMake\share\cmake-3.5\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files (x86)\CMake\share\cmake-3.5\Modules\Platform\Windows-MSVC.cmake;C:\graphics\total\CMakeFiles\3.5.1\CMakeRCCompiler.cmake;C:\Program Files (x86)\CMake\share\cmake-3.5\Modules\CMakeRCInformation.cmake;C:\Program Files (x86)\CMake\share\cmake-3.5\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files (x86)\CMake\share\cmake-3.5\Modules\CMakeCXXInformation.cmake;C:\Program Files (x86)\CMake\share\cmake-3.5\Modules\CMakeLanguageInformation.cmake;C:\Program Files (x86)\CMake\share\cmake-3.5\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files (x86)\CMake\share\cmake-3.5\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files (x86)\CMake\share\cmake-3.5\Modules\Platform\Windows-MSVC.cmake;C:\Program Files (x86)\CMake\share\cmake-3.5\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files (x86)\CMake\share\cmake-3.5\Modules\FindOpenGL.cmake;C:\Program Files (x86)\CMake\share\cmake-3.5\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files (x86)\CMake\share\cmake-3.5\Modules\FindPackageMessage.cmake;C:\Program Files (x86)\CMake\share\cmake-3.5\Modules\CMakeParseArguments.cmake;C:\graphics\CS380-master\ExternalProjects\cmake-modules-master\CreateLaunchers.cmake;C:\graphics\CS380-master\ExternalProjects\cmake-modules-master\CleanDirectoryList.cmake;C:\graphics\CS380-master\ExternalProjects\cmake-modules-master\MSVCMultipleProcessCompile.cmake;C:\graphics\CS380-master\ExternalProjects\cmake-modules-master\ListCombinations.cmake;C:\graphics\CS380-master\ExternalProjects\cmake-modules-master\launcher-templates\vcxproj.user.in;C:\graphics\CS380-master\ExternalProjects\cmake-modules-master\launcher-templates\targetlauncher.cmd.in;C:\graphics\CS380-master\ExternalProjects\cmake-modules-master\launcher-templates\targetlauncher.cmd.in;C:\graphics\CS380-master\ExternalProjects\cmake-modules-master\launcher-templates\targetlauncher.cmd.in;C:\graphics\CS380-master\ExternalProjects\cmake-modules-master\launcher-templates\targetlauncher.cmd.in;C:\graphics\CS380-master\ExternalProjects\cmake-modules-master\launcher-templates\vcxproj.user.in;C:\graphics\CS380-master\ExternalProjects\cmake-modules-master\launcher-templates\targetlauncher.cmd.in;C:\graphics\CS380-master\ExternalProjects\cmake-modules-master\launcher-templates\targetlauncher.cmd.in;C:\graphics\CS380-master\ExternalProjects\cmake-modules-master\launcher-templates\targetlauncher.cmd.in;C:\graphics\CS380-master\ExternalProjects\cmake-modules-master\launcher-templates\targetlauncher.cmd.in;C:\graphics\CS380-master\ExternalProjects\cmake-modules-master\launcher-templates\vcxproj.user.in;C:\graphics\CS380-master\ExternalProjects\cmake-modules-master\launcher-templates\targetlauncher.cmd.in;C:\graphics\CS380-master\ExternalProjects\cmake-modules-master\launcher-templates\targetlauncher.cmd.in;C:\graphics\CS380-master\ExternalProjects\cmake-modules-master\launcher-templates\targetlauncher.cmd.in;C:\graphics\CS380-master\ExternalProjects\cmake-modules-master\launcher-templates\targetlauncher.cmd.in;C:\graphics\CS380-master\ExternalProjects\cmake-modules-master\launcher-templates\vcxproj.user.in;C:\graphics\CS380-master\ExternalProjects\cmake-modules-master\launcher-templates\targetlauncher.cmd.in;C:\graphics\CS380-master\ExternalProjects\cmake-modules-master\launcher-templates\targetlauncher.cmd.in;C:\graphics\CS380-master\ExternalProjects\cmake-modules-master\launcher-templates\targetlauncher.cmd.in;C:\graphics\CS380-master\ExternalProjects\cmake-modules-master\launcher-templates\targetlauncher.cmd.in;C:\graphics\CS380-master\ExternalProjects\cmake-modules-master\launcher-templates\vcxproj.user.in;C:\graphics\CS380-master\ExternalProjects\cmake-modules-master\launcher-templates\targetlauncher.cmd.in;C:\graphics\CS380-master\ExternalProjects\cmake-modules-master\launcher-templates\targetlauncher.cmd.in;C:\graphics\CS380-master\ExternalProjects\cmake-modules-master\launcher-templates\targetlauncher.cmd.in;C:\graphics\CS380-master\ExternalProjects\cmake-modules-master\launcher-templates\targetlauncher.cmd.in;C:\graphics\CS380-master\ExternalProjects\cmake-modules-master\launcher-templates\vcxproj.user.in;C:\graphics\CS380-master\ExternalProjects\cmake-modules-master\launcher-templates\targetlauncher.cmd.in;C:\graphics\CS380-master\ExternalProjects\cmake-modules-master\launcher-templates\targetlauncher.cmd.in;C:\graphics\CS380-master\ExternalProjects\cmake-modules-master\launcher-templates\targetlauncher.cmd.in;C:\graphics\CS380-master\ExternalProjects\cmake-modules-master\launcher-templates\targetlauncher.cmd.in;C:\graphics\CS380-master\ExternalProjects\cmake-modules-master\launcher-templates\vcxproj.user.in;C:\graphics\CS380-master\ExternalProjects\cmake-modules-master\launcher-templates\targetlauncher.cmd.in;C:\graphics\CS380-master\ExternalProjects\cmake-modules-master\launcher-templates\targetlauncher.cmd.in;C:\graphics\CS380-master\ExternalProjects\cmake-modules-master\launcher-templates\targetlauncher.cmd.in;C:\graphics\CS380-master\ExternalProjects\cmake-modules-master\launcher-templates\targetlauncher.cmd.in;C:\graphics\CS380-master\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\graphics\total\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/graphics/CS380-master/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -HC:/graphics/CS380-master -BC:/graphics/total --check-stamp-file C:\graphics\total\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/graphics/CS380-master/CMakeLists.txt;C:\graphics\CS380-master\CMakeLists.txt;C:\graphics\total\CMakeFiles\3.5.1\CMakeSystem.cmake;C:\Program Files (x86)\CMake\share\cmake-3.5\Modules\CMakeSystemSpecificInitialize.cmake;C:\graphics\total\CMakeFiles\3.5.1\CMakeCCompiler.cmake;C:\graphics\total\CMakeFiles\3.5.1\CMakeCXXCompiler.cmake;C:\Program Files (x86)\CMake\share\cmake-3.5\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files (x86)\CMake\share\cmake-3.5\Modules\CMakeGenericSystem.cmake;C:\Program Files (x86)\CMake\share\cmake-3.5\Modules\Platform\Windows.cmake;C:\Program Files (x86)\CMake\share\cmake-3.5\Modules\Platform\WindowsPaths.cmake;C:\Program Files (x86)\CMake\share\cmake-3.5\Modules\CMakeCInformation.cmake;C:\Program Files (x86)\CMake\share\cmake-3.5\Modules\CMakeLanguageInformation.cmake;C:\Program Files (x86)\CMake\share\cmake-3.5\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files (x86)\CMake\share\cmake-3.5\Modules\Platform\Windows-MSVC.cmake;C:\graphics\total\CMakeFiles\3.5.1\CMakeRCCompiler.cmake;C:\Program Files (x86)\CMake\share\cmake-3.5\Modules\CMakeRCInformation.cmake;C:\Program Files (x86)\CMake\share\cmake-3.5\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files (x86)\CMake\share\cmake-3.5\Modules\CMakeCXXInformation.cmake;C:\Program Files (x86)\CMake\share\cmake-3.5\Modules\CMakeLanguageInformation.cmake;C:\Program Files (x86)\CMake\share\cmake-3.5\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files (x86)\CMake\share\cmake-3.5\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files (x86)\CMake\share\cmake-3.5\Modules\Platform\Windows-MSVC.cmake;C:\Program Files (x86)\CMake\share\cmake-3.5\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files (x86)\CMake\share\cmake-3.5\Modules\FindOpenGL.cmake;C:\Program Files (x86)\CMake\share\cmake-3.5\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files (x86)\CMake\share\cmake-3.5\Modules\FindPackageMessage.cmake;C:\Program Files (x86)\CMake\share\cmake-3.5\Modules\CMakeParseArguments.cmake;C:\graphics\CS380-master\ExternalProjects\cmake-modules-master\CreateLaunchers.cmake;C:\graphics\CS380-master\ExternalProjects\cmake-modules-master\CleanDirectoryList.cmake;C:\graphics\CS380-master\ExternalProjects\cmake-modules-master\MSVCMultipleProcessCompile.cmake;C:\graphics\CS380-master\ExternalProjects\cmake-modules-master\ListCombinations.cmake;C:\graphics\CS380-master\ExternalProjects\cmake-modules-master\launcher-templates\vcxproj.user.in;C:\graphics\CS380-master\ExternalProjects\cmake-modules-master\launcher-templates\targetlauncher.cmd.in;C:\graphics\CS380-master\ExternalProjects\cmake-modules-master\launcher-templates\targetlauncher.cmd.in;C:\graphics\CS380-master\ExternalProjects\cmake-modules-master\launcher-templates\targetlauncher.cmd.in;C:\graphics\CS380-master\ExternalProjects\cmake-modules-master\launcher-templates\targetlauncher.cmd.in;C:\graphics\CS380-master\ExternalProjects\cmake-modules-master\launcher-templates\vcxproj.user.in;C:\graphics\CS380-master\ExternalProjects\cmake-modules-master\launcher-templates\targetlauncher.cmd.in;C:\graphics\CS380-master\ExternalProjects\cmake-modules-master\launcher-templates\targetlauncher.cmd.in;C:\graphics\CS380-master\ExternalProjects\cmake-modules-master\launcher-templates\targetlauncher.cmd.in;C:\graphics\CS380-master\ExternalProjects\cmake-modules-master\launcher-templates\targetlauncher.cmd.in;C:\graphics\CS380-master\ExternalProjects\cmake-modules-master\launcher-templates\vcxproj.user.in;C:\graphics\CS380-master\ExternalProjects\cmake-modules-master\launcher-templates\targetlauncher.cmd.in;C:\graphics\CS380-master\ExternalProjects\cmake-modules-master\launcher-templates\targetlauncher.cmd.in;C:\graphics\CS380-master\ExternalProjects\cmake-modules-master\launcher-templates\targetlauncher.cmd.in;C:\graphics\CS380-master\ExternalProjects\cmake-modules-master\launcher-templates\targetlauncher.cmd.in;C:\graphics\CS380-master\ExternalProjects\cmake-modules-master\launcher-templates\vcxproj.user.in;C:\graphics\CS380-master\ExternalProjects\cmake-modules-master\launcher-templates\targetlauncher.cmd.in;C:\graphics\CS380-master\ExternalProjects\cmake-modules-master\launcher-templates\targetlauncher.cmd.in;C:\graphics\CS380-master\ExternalProjects\cmake-modules-master\launcher-templates\targetlauncher.cmd.in;C:\graphics\CS380-master\ExternalProjects\cmake-modules-master\launcher-templates\targetlauncher.cmd.in;C:\graphics\CS380-master\ExternalProjects\cmake-modules-master\launcher-templates\vcxproj.user.in;C:\graphics\CS380-master\ExternalProjects\cmake-modules-master\launcher-templates\targetlauncher.cmd.in;C:\graphics\CS380-master\ExternalProjects\cmake-modules-master\launcher-templates\targetlauncher.cmd.in;C:\graphics\CS380-master\ExternalProjects\cmake-modules-master\launcher-templates\targetlauncher.cmd.in;C:\graphics\CS380-master\ExternalProjects\cmake-modules-master\launcher-templates\targetlauncher.cmd.in;C:\graphics\CS380-master\ExternalProjects\cmake-modules-master\launcher-templates\vcxproj.user.in;C:\graphics\CS380-master\ExternalProjects\cmake-modules-master\launcher-templates\targetlauncher.cmd.in;C:\graphics\CS380-master\ExternalProjects\cmake-modules-master\launcher-templates\targetlauncher.cmd.in;C:\graphics\CS380-master\ExternalProjects\cmake-modules-master\launcher-templates\targetlauncher.cmd.in;C:\graphics\CS380-master\ExternalProjects\cmake-modules-master\launcher-templates\targetlauncher.cmd.in;C:\graphics\CS380-master\ExternalProjects\cmake-modules-master\launcher-templates\vcxproj.user.in;C:\graphics\CS380-master\ExternalProjects\cmake-modules-master\launcher-templates\targetlauncher.cmd.in;C:\graphics\CS380-master\ExternalProjects\cmake-modules-master\launcher-templates\targetlauncher.cmd.in;C:\graphics\CS380-master\ExternalProjects\cmake-modules-master\launcher-templates\targetlauncher.cmd.in;C:\graphics\CS380-master\ExternalProjects\cmake-modules-master\launcher-templates\targetlauncher.cmd.in;C:\graphics\CS380-master\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\graphics\total\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/graphics/CS380-master/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -HC:/graphics/CS380-master -BC:/graphics/total --check-stamp-file C:\graphics\total\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:/graphics/CS380-master/CMakeLists.txt;C:\graphics\CS380-master\CMakeLists.txt;C:\graphics\total\CMakeFiles\3.5.1\CMakeSystem.cmake;C:\Program Files (x86)\CMake\share\cmake-3.5\Modules\CMakeSystemSpecificInitialize.cmake;C:\graphics\total\CMakeFiles\3.5.1\CMakeCCompiler.cmake;C:\graphics\total\CMakeFiles\3.5.1\CMakeCXXCompiler.cmake;C:\Program Files (x86)\CMake\share\cmake-3.5\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files (x86)\CMake\share\cmake-3.5\Modules\CMakeGenericSystem.cmake;C:\Program Files (x86)\CMake\share\cmake-3.5\Modules\Platform\Windows.cmake;C:\Program Files (x86)\CMake\share\cmake-3.5\Modules\Platform\WindowsPaths.cmake;C:\Program Files (x86)\CMake\share\cmake-3.5\Modules\CMakeCInformation.cmake;C:\Program Files (x86)\CMake\share\cmake-3.5\Modules\CMakeLanguageInformation.cmake;C:\Program Files (x86)\CMake\share\cmake-3.5\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files (x86)\CMake\share\cmake-3.5\Modules\Platform\Windows-MSVC.cmake;C:\graphics\total\CMakeFiles\3.5.1\CMakeRCCompiler.cmake;C:\Program Files (x86)\CMake\share\cmake-3.5\Modules\CMakeRCInformation.cmake;C:\Program Files (x86)\CMake\share\cmake-3.5\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files (x86)\CMake\share\cmake-3.5\Modules\CMakeCXXInformation.cmake;C:\Program Files (x86)\CMake\share\cmake-3.5\Modules\CMakeLanguageInformation.cmake;C:\Program Files (x86)\CMake\share\cmake-3.5\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files (x86)\CMake\share\cmake-3.5\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files (x86)\CMake\share\cmake-3.5\Modules\Platform\Windows-MSVC.cmake;C:\Program Files (x86)\CMake\share\cmake-3.5\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files (x86)\CMake\share\cmake-3.5\Modules\FindOpenGL.cmake;C:\Program Files (x86)\CMake\share\cmake-3.5\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files (x86)\CMake\share\cmake-3.5\Modules\FindPackageMessage.cmake;C:\Program Files (x86)\CMake\share\cmake-3.5\Modules\CMakeParseArguments.cmake;C:\graphics\CS380-master\ExternalProjects\cmake-modules-master\CreateLaunchers.cmake;C:\graphics\CS380-master\ExternalProjects\cmake-modules-master\CleanDirectoryList.cmake;C:\graphics\CS380-master\ExternalProjects\cmake-modules-master\MSVCMultipleProcessCompile.cmake;C:\graphics\CS380-master\ExternalProjects\cmake-modules-master\ListCombinations.cmake;C:\graphics\CS380-master\ExternalProjects\cmake-modules-master\launcher-templates\vcxproj.user.in;C:\graphics\CS380-master\ExternalProjects\cmake-modules-master\launcher-templates\targetlauncher.cmd.in;C:\graphics\CS380-master\ExternalProjects\cmake-modules-master\launcher-templates\targetlauncher.cmd.in;C:\graphics\CS380-master\ExternalProjects\cmake-modules-master\launcher-templates\targetlauncher.cmd.in;C:\graphics\CS380-master\ExternalProjects\cmake-modules-master\launcher-templates\targetlauncher.cmd.in;C:\graphics\CS380-master\ExternalProjects\cmake-modules-master\launcher-templates\vcxproj.user.in;C:\graphics\CS380-master\ExternalProjects\cmake-modules-master\launcher-templates\targetlauncher.cmd.in;C:\graphics\CS380-master\ExternalProjects\cmake-modules-master\launcher-templates\targetlauncher.cmd.in;C:\graphics\CS380-master\ExternalProjects\cmake-modules-master\launcher-templates\targetlauncher.cmd.in;C:\graphics\CS380-master\ExternalProjects\cmake-modules-master\launcher-templates\targetlauncher.cmd.in;C:\graphics\CS380-master\ExternalProjects\cmake-modules-master\launcher-templates\vcxproj.user.in;C:\graphics\CS380-master\ExternalProjects\cmake-modules-master\launcher-templates\targetlauncher.cmd.in;C:\graphics\CS380-master\ExternalProjects\cmake-modules-master\launcher-templates\targetlauncher.cmd.in;C:\graphics\CS380-master\ExternalProjects\cmake-modules-master\launcher-templates\targetlauncher.cmd.in;C:\graphics\CS380-master\ExternalProjects\cmake-modules-master\launcher-templates\targetlauncher.cmd.in;C:\graphics\CS380-master\ExternalProjects\cmake-modules-master\launcher-templates\vcxproj.user.in;C:\graphics\CS380-master\ExternalProjects\cmake-modules-master\launcher-templates\targetlauncher.cmd.in;C:\graphics\CS380-master\ExternalProjects\cmake-modules-master\launcher-templates\targetlauncher.cmd.in;C:\graphics\CS380-master\ExternalProjects\cmake-modules-master\launcher-templates\targetlauncher.cmd.in;C:\graphics\CS380-master\ExternalProjects\cmake-modules-master\launcher-templates\targetlauncher.cmd.in;C:\graphics\CS380-master\ExternalProjects\cmake-modules-master\launcher-templates\vcxproj.user.in;C:\graphics\CS380-master\ExternalProjects\cmake-modules-master\launcher-templates\targetlauncher.cmd.in;C:\graphics\CS380-master\ExternalProjects\cmake-modules-master\launcher-templates\targetlauncher.cmd.in;C:\graphics\CS380-master\ExternalProjects\cmake-modules-master\launcher-templates\targetlauncher.cmd.in;C:\graphics\CS380-master\ExternalProjects\cmake-modules-master\launcher-templates\targetlauncher.cmd.in;C:\graphics\CS380-master\ExternalProjects\cmake-modules-master\launcher-templates\vcxproj.user.in;C:\graphics\CS380-master\ExternalProjects\cmake-modules-master\launcher-templates\targetlauncher.cmd.in;C:\graphics\CS380-master\ExternalProjects\cmake-modules-master\launcher-templates\targetlauncher.cmd.in;C:\graphics\CS380-master\ExternalProjects\cmake-modules-master\launcher-templates\targetlauncher.cmd.in;C:\graphics\CS380-master\ExternalProjects\cmake-modules-master\launcher-templates\targetlauncher.cmd.in;C:\graphics\CS380-master\ExternalProjects\cmake-modules-master\launcher-templates\vcxproj.user.in;C:\graphics\CS380-master\ExternalProjects\cmake-modules-master\launcher-templates\targetlauncher.cmd.in;C:\graphics\CS380-master\ExternalProjects\cmake-modules-master\launcher-templates\targetlauncher.cmd.in;C:\graphics\CS380-master\ExternalProjects\cmake-modules-master\launcher-templates\targetlauncher.cmd.in;C:\graphics\CS380-master\ExternalProjects\cmake-modules-master\launcher-templates\targetlauncher.cmd.in;C:\graphics\CS380-master\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\graphics\total\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/graphics/CS380-master/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -HC:/graphics/CS380-master -BC:/graphics/total --check-stamp-file C:\graphics\total\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:/graphics/CS380-master/CMakeLists.txt;C:\graphics\CS380-master\CMakeLists.txt;C:\graphics\total\CMakeFiles\3.5.1\CMakeSystem.cmake;C:\Program Files (x86)\CMake\share\cmake-3.5\Modules\CMakeSystemSpecificInitialize.cmake;C:\graphics\total\CMakeFiles\3.5.1\CMakeCCompiler.cmake;C:\graphics\total\CMakeFiles\3.5.1\CMakeCXXCompiler.cmake;C:\Program Files (x86)\CMake\share\cmake-3.5\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files (x86)\CMake\share\cmake-3.5\Modules\CMakeGenericSystem.cmake;C:\Program Files (x86)\CMake\share\cmake-3.5\Modules\Platform\Windows.cmake;C:\Program Files (x86)\CMake\share\cmake-3.5\Modules\Platform\WindowsPaths.cmake;C:\Program Files (x86)\CMake\share\cmake-3.5\Modules\CMakeCInformation.cmake;C:\Program Files (x86)\CMake\share\cmake-3.5\Modules\CMakeLanguageInformation.cmake;C:\Program Files (x86)\CMake\share\cmake-3.5\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files (x86)\CMake\share\cmake-3.5\Modules\Platform\Windows-MSVC.cmake;C:\graphics\total\CMakeFiles\3.5.1\CMakeRCCompiler.cmake;C:\Program Files (x86)\CMake\share\cmake-3.5\Modules\CMakeRCInformation.cmake;C:\Program Files (x86)\CMake\share\cmake-3.5\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files (x86)\CMake\share\cmake-3.5\Modules\CMakeCXXInformation.cmake;C:\Program Files (x86)\CMake\share\cmake-3.5\Modules\CMakeLanguageInformation.cmake;C:\Program Files (x86)\CMake\share\cmake-3.5\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files (x86)\CMake\share\cmake-3.5\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files (x86)\CMake\share\cmake-3.5\Modules\Platform\Windows-MSVC.cmake;C:\Program Files (x86)\CMake\share\cmake-3.5\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files (x86)\CMake\share\cmake-3.5\Modules\FindOpenGL.cmake;C:\Program Files (x86)\CMake\share\cmake-3.5\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files (x86)\CMake\share\cmake-3.5\Modules\FindPackageMessage.cmake;C:\Program Files (x86)\CMake\share\cmake-3.5\Modules\CMakeParseArguments.cmake;C:\graphics\CS380-master\ExternalProjects\cmake-modules-master\CreateLaunchers.cmake;C:\graphics\CS380-master\ExternalProjects\cmake-modules-master\CleanDirectoryList.cmake;C:\graphics\CS380-master\ExternalProjects\cmake-modules-master\MSVCMultipleProcessCompile.cmake;C:\graphics\CS380-master\ExternalProjects\cmake-modules-master\ListCombinations.cmake;C:\graphics\CS380-master\ExternalProjects\cmake-modules-master\launcher-templates\vcxproj.user.in;C:\graphics\CS380-master\ExternalProjects\cmake-modules-master\launcher-templates\targetlauncher.cmd.in;C:\graphics\CS380-master\ExternalProjects\cmake-modules-master\launcher-templates\targetlauncher.cmd.in;C:\graphics\CS380-master\ExternalProjects\cmake-modules-master\launcher-templates\targetlauncher.cmd.in;C:\graphics\CS380-master\ExternalProjects\cmake-modules-master\launcher-templates\targetlauncher.cmd.in;C:\graphics\CS380-master\ExternalProjects\cmake-modules-master\launcher-templates\vcxproj.user.in;C:\graphics\CS380-master\ExternalProjects\cmake-modules-master\launcher-templates\targetlauncher.cmd.in;C:\graphics\CS380-master\ExternalProjects\cmake-modules-master\launcher-templates\targetlauncher.cmd.in;C:\graphics\CS380-master\ExternalProjects\cmake-modules-master\launcher-templates\targetlauncher.cmd.in;C:\graphics\CS380-master\ExternalProjects\cmake-modules-master\launcher-templates\targetlauncher.cmd.in;C:\graphics\CS380-master\ExternalProjects\cmake-modules-master\launcher-templates\vcxproj.user.in;C:\graphics\CS380-master\ExternalProjects\cmake-modules-master\launcher-templates\targetlauncher.cmd.in;C:\graphics\CS380-master\ExternalProjects\cmake-modules-master\launcher-templates\targetlauncher.cmd.in;C:\graphics\CS380-master\ExternalProjects\cmake-modules-master\launcher-templates\targetlauncher.cmd.in;C:\graphics\CS380-master\ExternalProjects\cmake-modules-master\launcher-templates\targetlauncher.cmd.in;C:\graphics\CS380-master\ExternalProjects\cmake-modules-master\launcher-templates\vcxproj.user.in;C:\graphics\CS380-master\ExternalProjects\cmake-modules-master\launcher-templates\targetlauncher.cmd.in;C:\graphics\CS380-master\ExternalProjects\cmake-modules-master\launcher-templates\targetlauncher.cmd.in;C:\graphics\CS380-master\ExternalProjects\cmake-modules-master\launcher-templates\targetlauncher.cmd.in;C:\graphics\CS380-master\ExternalProjects\cmake-modules-master\launcher-templates\targetlauncher.cmd.in;C:\graphics\CS380-master\ExternalProjects\cmake-modules-master\launcher-templates\vcxproj.user.in;C:\graphics\CS380-master\ExternalProjects\cmake-modules-master\launcher-templates\targetlauncher.cmd.in;C:\graphics\CS380-master\ExternalProjects\cmake-modules-master\launcher-templates\targetlauncher.cmd.in;C:\graphics\CS380-master\ExternalProjects\cmake-modules-master\launcher-templates\targetlauncher.cmd.in;C:\graphics\CS380-master\ExternalProjects\cmake-modules-master\launcher-templates\targetlauncher.cmd.in;C:\graphics\CS380-master\ExternalProjects\cmake-modules-master\launcher-templates\vcxproj.user.in;C:\graphics\CS380-master\ExternalProjects\cmake-modules-master\launcher-templates\targetlauncher.cmd.in;C:\graphics\CS380-master\ExternalProjects\cmake-modules-master\launcher-templates\targetlauncher.cmd.in;C:\graphics\CS380-master\ExternalProjects\cmake-modules-master\launcher-templates\targetlauncher.cmd.in;C:\graphics\CS380-master\ExternalProjects\cmake-modules-master\launcher-templates\targetlauncher.cmd.in;C:\graphics\CS380-master\ExternalProjects\cmake-modules-master\launcher-templates\vcxproj.user.in;C:\graphics\CS380-master\ExternalProjects\cmake-modules-master\launcher-templates\targetlauncher.cmd.in;C:\graphics\CS380-master\ExternalProjects\cmake-modules-master\launcher-templates\targetlauncher.cmd.in;C:\graphics\CS380-master\ExternalProjects\cmake-modules-master\launcher-templates\targetlauncher.cmd.in;C:\graphics\CS380-master\ExternalProjects\cmake-modules-master\launcher-templates\targetlauncher.cmd.in;C:\graphics\CS380-master\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\graphics\total\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:/graphics/total/ZERO_CHECK.vcxproj">
+      <Project>D5C4F770-0BCB-32F3-9889-3BC78A9B763E</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/graphics/total/ExternalProjects/GLEW_190.vcxproj">
+      <Project>63614D36-C901-3F45-B715-E62765F70DCC</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/graphics/total/ExternalProjects/glfw-3.0.3/src/GLFW_303.vcxproj">
+      <Project>1E8A6D2E-6097-3191-AC68-6CA51EC83CD0</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/graphics/total/Homework2.vcxproj">
+      <Project>B937F172-C905-346A-BFCD-2CA2008E6ECF</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/graphics/total/Homework3.vcxproj">
+      <Project>D259076D-6E30-34CC-814F-BFEB2339C79C</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/graphics/total/Homework5_skeleton.vcxproj">
+      <Project>59A01591-00DE-3AE4-A7F3-DF2B04B9E0D1</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/graphics/total/Lab1.vcxproj">
+      <Project>B1D61E5D-97DC-3F58-AB5B-2EFDD2A043F3</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/graphics/total/Lab2.vcxproj">
+      <Project>67F84E6E-ED01-3749-B633-30E56B0A5BC2</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/graphics/total/Lab3.vcxproj">
+      <Project>3A7E0888-BD00-3920-A492-EB2DCCA78B03</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/graphics/total/SkeletonProject.vcxproj">
+      <Project>0A397D18-D2EF-3CF7-860B-19F0B185688D</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

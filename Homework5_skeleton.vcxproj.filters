@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\graphics\CS380-master\Homework5_skeleton\main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\graphics\CS380-master\common\shader.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\graphics\CS380-master\common\model.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\graphics\CS380-master\common\texture.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\graphics\CS380-master\common\shader.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\graphics\CS380-master\common\model.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\graphics\CS380-master\common\texture.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\graphics\CS380-master\common\geometry.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\graphics\CS380-master\common\affine.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\graphics\CS380-master\common\arcball.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\graphics\CS380-master\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\graphics\CS380-master\Homework5_skeleton\VertexShader.glsl" />
+    <None Include="C:\graphics\CS380-master\Homework5_skeleton\FragmentShader.glsl" />
+    <None Include="C:\graphics\CS380-master\Homework5_skeleton\BumpVertexShader.glsl" />
+    <None Include="C:\graphics\CS380-master\Homework5_skeleton\BumpFragmentShader.glsl" />
+    <None Include="C:\graphics\CS380-master\Homework5_skeleton\EnvVertexShader.glsl" />
+    <None Include="C:\graphics\CS380-master\Homework5_skeleton\EnvFragmentShader.glsl" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{3CF70BA9-4B84-3D1C-9B4B-B6D8E084AE56}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{F3FD3D4F-6AB4-3D66-88AE-8DDC7F016A04}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
